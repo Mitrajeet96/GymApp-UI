@@ -25,7 +25,7 @@ export class RegistrationComponent implements OnInit {
 
    }
 
-  ngOnInit(): void {
+  ngOnInit(): void {   /// Add validation later
     this.registrationForm = this.fb.group({
       firstName:[''],
       lasttName:[''],
