@@ -1,0 +1,76 @@
+{
+  "enquiryList": [
+    {
+      "firstName": "Debankur",
+      "lastName": "Bhattacharya",
+      "email": "deb.bha@embee.co.in",
+      "mobile": "998877665544",
+      "weight": 100,
+      "height": 1.706,
+      "bmi": 65.07728294099574,
+      "bmiResult": "Obese",
+      "gender": "Male",
+      "trainerOption": "Yes",
+      "package": "Quarterly",
+      "important": [
+        "Toxic Fat Reduction",
+        "Energy and Endurance",
+        "Building Lean Muscles",
+        "Healthier Digestive System",
+        "Sugar Craving Body",
+        "Physical Fitness"
+      ],
+      "gymHistory": "Yes",
+      "enquiryDate": "2023-04-01T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "firstName": "anirban",
+      "lastName": "bej",
+      "email": "bej@yahoo.in",
+      "mobile": "8877665544",
+      "weight": 85,
+      "height": 1.75,
+      "bmi": 64.25396041156863,
+      "bmiResult": "Obese",
+      "gender": "Male",
+      "trainerOption": "Yes",
+      "package": "Quarterly",
+      "important": [
+        "Toxic Fat Reduction",
+        "Energy and Endurance",
+        "Building Lean Muscles",
+        "Healthier Digestive System",
+        "Sugar Craving Body",
+        "Physical Fitness"
+      ],
+      "gymHistory": "Yes",
+      "enquiryDate": "2023-04-16T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "firstName": "Mitrajeet ",
+      "lastName": "Dutta",
+      "email": "mj@yahoo.in",
+      "mobile": "998877665544",
+      "weight": 50,
+      "height": 5,
+      "bmi": 22.360679774997894,
+      "bmiResult": "Normal",
+      "gender": "Male",
+      "trainerOption": "Yes",
+      "package": "Monthly",
+      "important": [
+        "Toxic Fat Reduction",
+        "Energy and Endurance",
+        "Building Lean Muscles",
+        "Healthier Digestive System",
+        "Sugar Craving Body",
+        "Physical Fitness"
+      ],
+      "gymHistory": "Yes",
+      "enquiryDate": "2023-04-17T18:30:00.000Z",
+      "id": 4
+    }
+  ]
+}

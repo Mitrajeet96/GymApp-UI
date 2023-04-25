@@ -16,7 +16,7 @@
       <div class="col-md-6"> <!---LastName--->
         <mat-form-field appearance="outline">
           <mat-label>Last Name</mat-label>
-          <input formControlName="lasttName" matInput placeholder="Last Name">
+          <input formControlName="lastName" matInput placeholder="Last Name">
           <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
         </mat-form-field>
       </div>
@@ -34,14 +34,7 @@
           <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
         </mat-form-field>
       </div>
-      <div class="col-md-6"> <!---height--->
-        <mat-form-field appearance="outline">
-          <mat-label>Height</mat-label>
-          <input type="number" formControlName="height" matInput placeholder="Height">
-          <mat-icon matSuffix><i class="fa fa-text-height" aria-hidden="true"></i></mat-icon>
-          <mat-hint>In Meters</mat-hint>
-        </mat-form-field>
-      </div>
+
       <div class="col-md-6"> <!---weight--->
         <mat-form-field appearance="outline">
           <mat-label>Weight</mat-label>
@@ -50,6 +43,16 @@
           <mat-hint>In KG's</mat-hint>
         </mat-form-field>
       </div>
+
+      <div class="col-md-6"> <!---height--->
+        <mat-form-field appearance="outline">
+          <mat-label>Height</mat-label>
+          <input [readonly]="!this.registrationForm.value?.weight" type="number" formControlName="height" matInput placeholder="Height">
+          <mat-icon matSuffix><i class="fa fa-text-height" aria-hidden="true"></i></mat-icon>
+          <mat-hint>In Meters</mat-hint>
+        </mat-form-field>
+      </div>
+
       <div class="col-md-6"> <!---bmi--->
         <mat-form-field appearance="outline">
           <mat-label>BMI</mat-label>
@@ -60,7 +63,7 @@
       <div class="col-md-6"> <!---bmiResults--->
         <mat-form-field appearance="outline">
           <mat-label>BMI Result</mat-label>
-          <input readonly type="number" formControlName="bmiResult" matInput placeholder="BMI result">
+          <input readonly type="text" formControlName="bmiResult" matInput placeholder="BMI result">
           <mat-icon matSuffix><i class="fa fa-check" aria-hidden="true"></i></mat-icon>
         </mat-form-field>
       </div>
@@ -121,7 +124,8 @@
         </mat-form-field>
       </div>
     </div>
-    <button (click)="submitRegistration()" mat-raised-button color="accent">Submit</button>
+    <button *ngIf="!isUpdate" class="mt-5" (click)="submitRegistration()" mat-raised-button color="accent">Submit</button>
+    <button *ngIf="isUpdate" class="mt-5" (click)="updateRegistration()" mat-raised-button color="warn">Update</button>
   </form>
 
 </div>
